@@ -4,8 +4,8 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN javac Hello.java
+RUN javac App.java
 
 ENV INITSYSTEM=on
 
-CMD ["java", "-cp", ".", "Hello"]
+CMD ["java", "-cp", ".", "App"]
